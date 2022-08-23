@@ -1,0 +1,30 @@
+
+
+
+fun main() {
+    
+  
+  /* Break And Countinue */
+  
+  var x=0
+  
+  while(x<10){
+    x++
+    
+    if(x==5)break // jab 5 num loop me ayega tabhi ye loop end ho jayega
+    
+    println(x)
+  }
+  
+  
+  while(x<10){
+    x++
+    
+    if(x==5)continue //ye 5 ko skip krke sbko print krega
+    
+    println(x)
+  }
+   
+   
+    
+}
