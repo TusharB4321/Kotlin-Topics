@@ -1,0 +1,54 @@
+
+
+fun main() {
+    
+   /*   *** For Loop  ***  
+   Pure collection ko print krna hai ek ek krke to for loop 
+   best hai
+   */
+   
+    for(item in 1..5)println(item)
+    
+    for multiple
+   
+  for(item in 1..5){
+    // print("Steps: ")
+    // println(item)
+    println("Steps: $item")
+  }
+   
+   for(item in 5 downTo 1){
+     println(item)
+   }
+   
+   
+   
+   /*  *** while Loop ***  
+   iss loop me hum condition basis pe loop chalate hai
+   
+   */
+   
+   
+   var x=0
+   
+   while(x<5){
+     x++
+     println(x)
+     
+   }  
+   
+   /* *** do while Loop *** 
+    ek bar ye print krta hai chahe true ho ya false fir while me condition 
+    check krta hai
+    */
+   
+   var x=0
+   
+   do{
+     println(x)
+     x++
+   }while(x<5)
+   
+   
+    
+}
