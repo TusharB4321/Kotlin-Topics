@@ -1,0 +1,106 @@
+/* 
+Fuction ek block of code hota hai jise hum kisi bhi fun or class me use kr skte hai
+      ussi code ko reuse kr skte hai
+      
+      */
+fun main() {
+  add()
+  var Cal=multi()
+   println(Cal)
+    add(5,4)
+    
+    var Cal=add(5,4)
+   println(Cal)
+   
+     var Mul=mul(5,4)
+   println(Mul)
+}
+
+/*  Function without parameter
+fun add(){
+    var a=5
+    var b=10
+  print(a+b)
+}
+
+fun multi():Int{
+    var a=5
+    var b=4
+    return(a*b)
+}
+*/
+
+  /*Function with parameter
+  
+fun add(a:Int,b:Int){
+    
+  print(a+b)
+}
+
+ fun multi():Int{
+     var a=5
+     var b=4
+    return(a*b)
+ }
+ 
+ fun add(a:Int,b:Int):Int{
+    
+    return(a+b)
+}
+
+fun mul(a:Int,b:Int):Int{
+    
+    return(a*b)
+}   */
+
+
+/*Function with default Argument
+mul function ke andher default value dal skte hai
+
+fun main() {
+   var Mul=mul(5)
+   println(Mul)
+}
+
+fun mul(a:Int,b:Int=10):Int{
+    
+    return(a*b)
+}  */
+
+/*Function with default Name Argument
+hum variable ka name change kr skte hai jis name se value ussi name is dekhega
+
+fun main() {
+   var Mul=mul(b=10,a=5)
+   println(Mul)
+}
+
+fun mul(a:Int,b:Int):Int{
+    println("A=$a")
+    println("B=$b")
+    print("a*b=")
+    return(a*b)
+}  */
+
+
+
+/*
+   Higher Order function:Kisi fun ko return krta hai or fun ko parameter leta hai
+
+fun main() {
+  
+    HOF(5,4 ,::add)
+    
+}
+
+fun add(a:Int,b:Int):Int{
+    return(a+b)
+}
+
+fun HOF(a:Int,b:Int ,callback:(Int,Int )->Int){
+    
+    print(callback(a,b))
+    
+}
+    
+}   */
