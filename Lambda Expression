@@ -1,0 +1,34 @@
+
+
+
+/*  
+Lambda Expression: {a:Int,b:Int-> a+b} isko var be store krna pdta hai
+
+fun main() {
+  
+    var add={a:Int,b:Int-> a+b} 
+    println(add(5,4))
+    
+    
+    //dusra tarika 
+    
+    var sum:(Int,Int)->Int={a,b->a+b}
+    println(sum(10,20))
+
+    
+   // lambda expression using higher order function
+
+    HOF(10,30,{a:Int,b:Int->a+b})
+    
+     HOF(10,30){a:Int,b:Int->a+b} //this is useful expression
+    
+}
+
+
+fun HOF(a:Int,b:Int,callback:(Int,Int)->Int){
+    
+    print(callback(a,b))
+    
+}
+
+*/
