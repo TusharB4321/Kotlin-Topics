@@ -1,0 +1,59 @@
+fun main() {
+  
+   /* Array : COllection of same type of datatype */
+    
+   val a=arrayOf("Ritesh","Tushar","Shivam","Om","Chaitanya",100,'M')
+//    println(a[0])
+//    println(a[1])
+//    println(a[2])
+//    println(a[3])
+//    println(a[4])
+//    println(a[5])
+//    println(a[6])
+
+       for(item in a){
+           println(item)
+       }
+       
+       
+       val name=arrayOf<String>("Ritesh","Tushar","Shivam","Om","Chaitanya")
+//    println(a[0])
+//    println(a[1])
+//    println(a[2])
+//    println(a[3])
+//    println(a[4])
+//    println(a[5])
+//    println(a[6])
+
+       for(item in name){
+           println(item)
+       }
+       
+        name[2]="Sumit"  //index ko change bhi kr skte hai
+    
+    for(item in name){
+           println(item)
+       }
+    
+    name.set(1,"Ramesh")  // set method se bhi index change kr skte hai
+    
+    for(item in name){
+           println(item)
+       }
+    
+    
+    val nm=name.get(0)   // isse value get hoti hai i.e 0=Ritesh
+    println(nm)
+    
+    for(item in name.indices){    //isse hame index no milenge only
+           println(item)
+       }
+       
+        for(item in name.indices){    //isse hame index and string value milega
+           println("$item=${name[item]}")
+       }
+       
+       
+        print(name.size)  //size of array no print krta hai
+    
+}
