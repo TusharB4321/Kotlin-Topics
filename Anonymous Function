@@ -1,0 +1,36 @@
+
+  
+   /* Null Safty: null safty ka use hum koi bhi nullable expection na de isliye krte hai */
+    
+    fun main() {
+  
+   
+    var name1:String="Tushar"
+    //name1=null     not allowed 
+    
+    var name2:String?="Rohit"
+     
+  //  name2=null   Allow ?-> ye batata hai ki null value dal skte ho
+  
+    var length1=name1.length
+    println(length1)
+    
+    
+    var length2=name2!!.length  //idhar null safty lagana padega
+    println(length2)
+    
+    /*
+    3 types se null safty check kr skte hai 
+    
+    1.Condition daldo (if else ki)
+    2.?
+    3.!! (non-null asseration operator) null value ko non -null me convert kr deta hai */
+    
+   
+    
+}
+    
+   
+    
+   
+    
