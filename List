@@ -1,0 +1,50 @@
+fun main() {
+    
+    /*List: List me hum modify ni kr skte ye immutable hai 
+          iss ke liye hame mutableList use krna padega*/
+//   val a=listOf("Tushar","Rohit",100,"M")
+//   println(a)
+   
+//   println(a[0])
+//   println(a[1])
+//   println(a[2])
+//   println(a[3])
+   
+//   println(a.get(0))
+   
+//   for(data in a){
+//       println(data)
+//   }
+   
+//   val names=listOf<String>("Tushar","Rohit","Shyam","Sundar")
+//   println(names)
+   
+   val student=mutableListOf("Tushar","Rohit","Shyam","Sundar")
+   println(student)
+   
+//   student[0]="Ashish"   //update
+//   println(student)
+   
+//   student.add(4,"Honey")
+//   println(student)
+   
+//   println(student.size)
+   
+   student.removeAt(1)
+   println(student)
+   println(student.size)
+   
+   /* User Input List  */
+   
+   print("Enter number of student: ")
+   
+   val a=readLine()!!.toInt()
+
+   println("Enter name of Students: ")
+   val name=List<String>(a){readLine()!!}
+   
+   for(list in name){
+       println(list)
+   }
+   
+}
