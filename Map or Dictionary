@@ -1,0 +1,48 @@
+fun main() {
+    
+    // Map or dictionary: syntax mapOf(key to value)
+    //                   ye pair hota hai key and value ka
+    //                   jaha key unique hota hai
+    //                   ex employee id ->key 
+    val a=mapOf(1 to "Tushar",2 to "Ritesh","Ashish" to 3)
+    println(a)
+    
+    println(a[1])
+    println(a[2])
+    println(a["Ashish"])
+    
+  println(a.get(1))
+
+  println(a.keys)
+  println(a.values)
+   
+  println("All keys:${a.keys}")
+   
+  for(data in a.keys){
+      println(data)
+  }
+   
+  println("All values:${a.values}")
+   
+  for(value in a.values){
+      println(value)
+  }
+
+  for(key in a.keys){
+      println("$key = ${a[key]}")
+  }
+
+
+   val b=mapOf<Int,String>(1 to "Tushar",2 to "Ritesh",3 to "Ashish")
+   
+   println(b)
+   
+   // Mutable me hum update,delete kr skte hai
+   
+   val c=mutableMapOf<Int,String>(1 to "Tushar",2 to "Ritesh",3 to "Ashish")
+       
+   println(c)
+   
+   
+   
+}
