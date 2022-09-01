@@ -1,0 +1,21 @@
+fun main() {
+    
+    // Set :1.ye unique element leta hai
+    //      2.yaha pe duplicate repeat ni hote
+    //      3.ye unordered hota hai
+//   val a=setOf("Tushar","Rohit","Ashish","Tushar","Rohit")
+//   println(a)
+   
+   val b=mutableSetOf("Tushar","Rohit","Ashish","Tushar","Rohit")
+   println(b)
+   
+   b.add("Ritesh")
+   println(b)
+   println(b.size)
+   
+   b.remove("Tushar")
+   println(b)
+   println(b.size)
+   
+   
+}
