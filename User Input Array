@@ -1,0 +1,13 @@
+fun main() {
+    print("Enter your number: ")
+ 
+ val a= readLine()!!.toInt()
+ 
+ println("Enter Student name: ")
+ 
+ val student=Array(a){readLine()!!.toString()}
+ 
+ for(Student in student){
+     print(Student+",")
+ }
+}
