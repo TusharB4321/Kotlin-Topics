@@ -1,0 +1,61 @@
+fun main() {
+    
+   /* ***** Primary Constructor ****** */
+    
+     val per=person("Tushar",20)
+       per.dis()
+    
+//     val iphone=Mobile("Samsung",33)
+    
+//     iphone.brand()
+    
+//     println(iphone.name)
+//     println(iphone.modelNo)
+//     println(iphone.price)
+    
+    
+//     val OnePlus=Mobile("OnePlus",45)
+    
+//     OnePlus.brand()
+    
+//     println(OnePlus.name)
+//     println(OnePlus.modelNo)
+//     println(OnePlus.price)
+    
+}
+
+
+// class Mobile(var name:String,var modelNo:Int){
+    
+//     val price:Double=223.34
+    
+//     fun brand(){
+        
+//         println("Mobile name is: $name")
+//         println("modelNo is: $modelNo")
+//         println("price is :$price")
+//     }
+
+
+    class person(var name:String,var age:Int){
+        
+        var nName:String=name
+        var aAge:Int
+        var gender:String="M"
+        
+        init{
+        
+            aAge=age
+        }
+        
+        
+        fun dis(){
+            
+            println("Name: $nName")
+            println("Age: $aAge")
+            println("gender: $gender")
+        }
+    }
+    
+    
+}
