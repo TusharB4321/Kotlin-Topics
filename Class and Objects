@@ -1,0 +1,27 @@
+fun main() {
+    val lg=Mobile()   //creating Object
+   lg.brand()         // Calling Fun member
+   
+   lg.model="OnePlus"   //Accessing property using object
+   lg.price=223
+   lg.brand()             // Calling Function using object
+   
+   val samsung=Mobile()
+   samsung.model="Sam199"
+    samsung.price=332
+    
+    samsung.brand()
+}
+
+
+class Mobile{
+    
+    var model:String="iPhone 13pro"
+    var price:Int=123
+    
+    fun brand(){
+        
+        println("model is: $model")
+        println("price is: $price")
+    }
+}
