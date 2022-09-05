@@ -1,0 +1,46 @@
+fun main() {
+    
+   /* ***** Inheritance ****** */
+    
+   val a=Child()
+   a.dis()
+     
+}
+
+
+   open class Father(){
+        
+        var name:String="Baba"
+        var aAge:Int=53
+        var gender:String="M"
+        
+//         constructor( name:String, age:Int){
+            
+//             println("Constructor Called")
+//             this.name=name
+//             aAge=age
+            
+//         }
+        
+        
+        fun dis(){
+            
+            println("Name: $name")
+            println("Age: $aAge")
+            println("gender: $gender")
+        }
+    }
+   
+   
+   class Child:Father(){
+       
+       val Nname:String="Tushar"
+       val age:Int=20
+       
+       
+       fun abc(){
+           
+           println("Your name is:$Nname")
+           println("Your age is:$age")
+       }
+   }
