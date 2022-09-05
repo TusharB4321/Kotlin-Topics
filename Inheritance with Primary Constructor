@@ -1,0 +1,54 @@
+fun main() {
+    
+   /* ***** Inheritance with Primary Constructor ****** */
+    
+   val a=Child("Tushar",20,"BMW")
+   a.dis()
+    
+    println("Updated list: ")
+    a.name="ROhit"
+    a.aAge=20
+    a.gender="M"
+    a.dis()
+     
+}
+
+
+   open class Father( name:String, aAge:Int){
+        
+        var name:String=name
+        var aAge:Int=aAge
+        var gender:String="M"
+        
+//         constructor( name:String, age:Int){
+            
+//             println("Constructor Called")
+//             this.name=name
+//             aAge=age
+            
+//         }
+        
+        
+        fun dis(){
+            
+            println("Name: $name")
+            println("Age: $aAge")
+            println("gender: $gender")
+        }
+    }
+   
+   
+   class Child(name:String,aAge:Int,car:String):Father(name,aAge)
+    {
+       
+       val Nname:String="Tushar"
+       val age:Int=20
+       val car:String=car
+       
+       
+       fun abc(){
+           
+           println("Your name is:$Nname")
+           println("Your age is:$age")
+       }
+   }
