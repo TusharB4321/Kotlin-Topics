@@ -1,0 +1,62 @@
+fun main() {
+    
+   /* ***** Inheritance with Secondary Constructor ****** */
+    
+   val a=Child("Tushar",20,"M","KTM")
+   a.dis()
+    
+    println("Updated list: ")
+    a.name="ROhit"
+    a.aAge=20
+    a.gender="M"
+    a.dis()
+     
+}
+
+
+   open class Father{
+        
+        var name:String
+        var aAge:Int
+        var gender:String
+        
+        //Making Secondary Constructor
+        
+        constructor(name:String,aAge:Int,gender:String){
+            this.name=name
+            this.aAge=aAge
+            this.gender=gender
+        }
+        
+//         constructor( name:String, age:Int){
+            
+//             println("Constructor Called")
+//             this.name=name
+//             aAge=age
+            
+//         }
+        
+        
+        fun dis(){
+            
+            println("Name: $name")
+            println("Age: $aAge")
+            println("gender: $gender")
+        }
+    }
+   
+   
+   class Child:Father{
+       
+      
+       val bike:String
+       
+       constructor(name:String,aAge:Int,gender:String,bike:String):super(name,aAge,gender){
+           this.bike=bike
+       }
+       
+       fun abc(){
+           
+           println("Your bike is: $bike")
+       }
+   }
