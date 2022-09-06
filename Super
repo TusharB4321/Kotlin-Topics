@@ -1,0 +1,39 @@
+fun main() {
+    val a=Son()
+    a.dis()
+    
+    val b=Father()
+    b.dis()
+}
+
+open class Father{
+    
+    open val name:String="father"
+    val age:Int=50
+    val gender:String="M"
+    
+    
+    open fun dis(){
+        println("Your name is: $name")
+        println("Your age is: $age")
+        println("Your gender is: $gender")
+    }
+}
+
+ 
+ class Son:Father(){
+     
+     // Overriding properties
+     override val name:String="Tushar"
+      val Aage:Int=20
+      
+      val _name:String=super.name //override ke bad bhi father(parent) name ko call krna hai to super keyword use hota hai
+     
+    
+    
+     // Overriding Function
+     override fun dis(){
+         println("Your age is: $Aage")
+          println("Your Change_Name is: $_name")
+     }
+ }
