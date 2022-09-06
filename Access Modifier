@@ -1,0 +1,55 @@
+/******* Visibility Modifiers *******/
+
+  /* private : Private Ko hum jis class me assign kr rahe hai ussi       class me Use kr skte hai
+   
+   Protected:  Protected Ko hum jis class me assign kr rahe hai usme and SubClass me use kr skte hai eg.Son class
+   
+   Internal : Isse hum subhi jgha use kr skte hai
+   
+   Public: Ye by default assign rhta hai  */
+fun main() {
+    val a=Son()
+    a.count()
+   // a.number1=20   cant access this is private
+   // a.number2=40   cant access this is protected
+     a.number3=60
+    a.number4=80
+    
+    a.count()
+    
+    
+}
+
+open class Father{
+    
+    private val number1:Int=10 
+    protected val number2:Int=20
+    internal val number3:Int=30
+    val number4:Int=40
+    
+    fun Num(){
+        
+        println("Num1= $number1")
+         println("Num2= $number2")
+          println("Num3= $number3")
+           println("Num4= $number4")
+    }
+    
+}
+
+ 
+ class Son:Father(){
+     
+     val aName:String="Name"
+     fun count(){
+         Num()
+     }
+    
+ }
+  
+  /* Hum constructor ko bhi private ,protected kr skte hai
+     eg.
+      
+      class child private constructor(age:Int){
+          }
+          */
