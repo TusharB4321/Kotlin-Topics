@@ -1,0 +1,32 @@
+/******** Interface *******/
+  
+  /* 1.interface me hum value ko intialize ni krte
+     2.properties abstract rhti hai
+     3.Jo bhi inherit kr raha hai uski jimmedari hogi ki 
+        abstact method or property ko implement kre.
+     4.Interface ka hum object create ni kr skte*/
+  
+fun main() {
+    val a=Son()
+    a.hello()
+}
+
+interface Parent{
+    val name:String    //abstract property
+    
+    fun dis(){
+        println("Name =$name")
+    }
+    
+    fun hello()  //ye abstract method hei
+}
+
+class Son:Parent{
+    
+    override val name:String="Tushar"
+   override fun hello(){
+        dis()
+    }
+    
+    
+}
