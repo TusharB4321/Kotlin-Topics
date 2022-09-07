@@ -1,0 +1,38 @@
+/******** Interface Conflict *******/
+  
+  
+  
+fun main() {
+    val a=Son()
+    a.dis()
+}
+
+interface A{
+    val name:String    //abstract property
+    
+    fun dis(){
+        println("Name =$name")
+    }
+    
+  
+}
+
+interface B{
+    val name:String    //abstract property
+    
+    fun dis(){
+        println("Your Name is =$name")
+    }
+    
+}
+
+class Son:A,B{
+    
+    override val name:String="Tushar"
+    override fun dis(){
+        super<A>.dis()
+        super<B>.dis()
+    }
+    
+    
+}
