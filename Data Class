@@ -1,0 +1,25 @@
+/******** Data class *******/
+  
+  
+  
+fun main() {
+    
+    val emp=Employee("Tushar",20)
+    
+    println("Name=${emp.name}")
+    println("Age =${emp.age}")
+    
+    println(emp)
+    println(emp.toString())
+    
+    
+    // Destructuring object
+     
+     val(name,age)=emp
+      println("Name=$name")
+    println("Age =$age")
+
+     
+}
+
+ data class Employee(val name:String,val age:Int)
