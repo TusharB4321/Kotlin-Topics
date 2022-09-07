@@ -1,0 +1,22 @@
+/******** Exception Handling *******/
+  
+  
+  
+fun main() {
+    
+  val result= try{
+      
+      val a=10/2   //Exception throw hota hai yaha
+      a
+  }catch(e:Exception){
+       
+      e.message       // Exception catch hota hai
+  } finally{
+      
+      println("Always Execute")  // Exception rahe ya na rahe ye                           print hota hai
+  }
+  
+  println(result)
+
+     
+}
