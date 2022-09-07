@@ -1,0 +1,37 @@
+/******** Abstract *******/
+  
+  /*1.abstract class ke liye abstract keyword likhna padega
+    2.abstract class by default open hota hai tab isko inherit kr skte hai
+    3.abstract class ke ander abstract method ya simple method ,properties bana skte hai
+    4.abstract class ke ander jo bhiabstract method hote hai usko inherit krne ki jimmedari jo inherit krta hi uski hoti hai 
+    5.abstract class ke hum object create ni kr skte*/
+    
+    
+fun main() {
+    val a=Son()
+    a.dip()
+    a.hello()
+}
+
+abstract class father(){
+    val name:String="Father"
+    val age:Int=50
+    
+    fun dis(){
+        println("Name=$name")
+        println("Age=$age")
+    }
+    
+    abstract fun hello()
+}
+
+ class Son:father(){
+     
+     fun dip(){
+         dis()
+     }
+     
+     override fun hello(){
+         println("Hellow world")
+     }
+ }
